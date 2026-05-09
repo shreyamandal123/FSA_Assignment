@@ -1,20 +1,16 @@
-## Our Inspiration
+## Inspiration
 
-Our project aims to help provide small businesses with a platform to allow them to run their shops virtually. The inspiration behind this project was the current pandemic situation. In these times people hesitate to go to local stores like they used to before. To help the small businesses to recover from this loss, I have built an app that lets them run their shop online without any hassle whatsoever.
+This project aims to help provide small businesses with a platform to allow them to run their shops virtually. The inspiration behind this project was that more and more people prefer online shopping these days , leading to decreased sales of local vendors. In these times people hesitate to go to local stores like they used to before. To help the small businesses to recover from this loss, I have built an app that lets them run their shop online without any hassle whatsoever.
 
-## What our app does
+## What the app does
 
-NimbusCart lets the small business owners register their shops on our virtual platform and gives them access to their inventory providing various features to add, edit, and delete products. In the dashboard, they can also view the orders placed by the customers.
+NimbusCart lets the small business owners register their shops on a virtual platform and gives them access to their inventory providing various features to add, edit, and delete products. In the dashboard, they can also view the orders placed by the customers.
 
-On the user side, our main component is a map that shows you all the local shops around you and lets you visit stores virtually. Placing orders and order history are components in the making.
+On the user side, the main component is a map that shows you all the local shops around you and lets you visit stores virtually. Placing orders and order history are components in the making.
 
 ## Technologies used
 
 I built this app using MERN Stack and used Material-UI library for UI designing.
-
-## What's next for NimbusCart
-
-I have big plans for NimbusCart. I will be working towards adding new features involving Ib scraping and making the app as user friendly as possible!
 
 ## Available Scripts
 
