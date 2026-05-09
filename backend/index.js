@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const passport = require("passport");
+const swaggerUi = require("swagger-ui-express");
+const swaggerSpec = require("./docs/openapi");
 
 const app = express();
 app.use(cors());
@@ -32,6 +34,7 @@ app.use("/api/users", require("./routes/api/users"));
 app.use("/api/products", require("./routes/api/products"));
 app.use("/api/orders", require("./routes/api/orders"));
 app.use("/api/stores", require("./routes/api/stores"));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 require("./config/passport")(passport);
 require("./config/passport")(passport);

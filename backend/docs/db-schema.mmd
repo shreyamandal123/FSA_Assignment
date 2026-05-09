@@ -1,0 +1,67 @@
+erDiagram
+  USERS {
+    ObjectId _id
+    string name
+    string email
+    string password
+    array orders
+    number userType
+    date date
+    string address
+    array addressData
+  }
+
+  ADMINS {
+    ObjectId _id
+    string name
+    string email
+    string password
+    number userType
+    date date
+  }
+
+  STORES {
+    ObjectId _id
+    string storeName
+    string address
+    string category
+    ObjectId adminId
+    string city
+    array cityData
+    array addressData
+  }
+
+  PRODUCTS {
+    ObjectId _id
+    string productName
+    number quantity
+    string category
+    number price
+    ObjectId adminId
+    ObjectId storeId
+  }
+
+  ORDERS {
+    ObjectId _id
+    ObjectId userId
+    string userName
+    string address
+    string status
+    number total
+    date createdAt
+    date updatedAt
+  }
+
+  ORDER_ITEMS {
+    ObjectId productId
+    string productName
+    number quantity
+    number price
+  }
+
+  ADMINS ||--o{ STORES : owns
+  ADMINS ||--o{ PRODUCTS : creates
+  STORES ||--o{ PRODUCTS : contains
+  USERS ||--o{ ORDERS : places
+  ORDERS ||--|{ ORDER_ITEMS : includes
+  PRODUCTS ||--o{ ORDER_ITEMS : referenced_by
